@@ -31,11 +31,19 @@ int main(void)
 // printf("%d\n", my_strcmp("abd", "abc"));
 // printf("%d\n", my_strchr("hello", 'b'));
 // printf("%d\n", my_pow(2, 2));
- printf("%f\n",my_pow_double(3.0, 0));
+// printf("%f\n",my_pow_double(3.0, 0));
 
 
+   char *result = format_my_isupper(buf, 'A', 1);
 
+    printf("Result: [%s]\n", result);
+    printf("Length: %zu\n", strlen(result));
 
+    for (int i = 0; result[i] != '\0'; i++)
+    {
+        printf("result[%d] = %d ('%c')\n",
+               i, (unsigned char)result[i], result[i]);
+        }
     // test your functions here:
     // my_isdigit('5');
     // printf("%d\n", my_pow(2, 8));
