@@ -303,7 +303,7 @@ loop:
 
 char * format_my_isupper(char dest[], char c, int r)
 {
-    
+    clear_string(dest, 64);
     if (r == 1)
         sprintf(dest, "isupper('%c') = %s", c, "true");
     else
